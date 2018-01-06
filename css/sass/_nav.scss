@@ -1,0 +1,14 @@
+nav {
+    ul {
+        display: flex;
+        font-family: $serif;
+        font-size: 1.1rem;
+        justify-content: space-around;
+        list-style-type: none;
+        margin:0 auto 55px;
+        max-width: 800px;
+        padding: 0;
+        text-transform: uppercase;
+        width: 80vw;
+    }
+}

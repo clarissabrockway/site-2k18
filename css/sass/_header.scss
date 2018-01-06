@@ -1,0 +1,25 @@
+header {
+    text-align: center;
+
+    h1 {
+        font-size: 3rem;
+        margin: 35px 0 25px;
+    }
+
+    .heart {
+        font-size: 1.1rem;
+        font-weight: bold;
+        display: inline-block;
+        margin-right: 20px;
+        position: relative;
+        top: -14px;
+        left: -24px;
+        transform: rotate(12deg);
+    }
+
+    .coffin {
+        display: inline-block;
+        transform: rotate(99deg);
+        font-size: 3.3rem;
+    }
+}
