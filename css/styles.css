@@ -14,12 +14,12 @@ header {
     display: inline-block;
     margin-right: 20px;
     position: relative;
-    top: -14px;
-    left: -24px;
-    transform: rotate(12deg); }
+    top: -12px;
+    left: -22px;
+    transform: rotate(31deg); }
   header .coffin {
     display: inline-block;
-    transform: rotate(99deg);
+    transform: rotate(117deg);
     font-size: 3.3rem; }
 
 main {
