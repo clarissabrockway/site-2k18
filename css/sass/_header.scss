@@ -33,4 +33,19 @@ header {
             padding-left: 15px;
         }
     }
+
+    @media (max-width: $break-mobile) {
+        position: absolute;
+        top: 10px;
+        left: 5px;
+        flex-direction: row;
+
+        a {
+            margin-right: 10px;
+
+            &:hover {
+                padding-left: 0;
+            }
+        }
+    }
 }

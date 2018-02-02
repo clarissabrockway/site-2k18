@@ -11,4 +11,12 @@ nav {
         text-transform: uppercase;
         width: 80vw;
     }
+
+    @media (max-width: $break-mobile) {
+        ul {
+            font-size: .9rem;
+            justify-content: space-between;
+            margin-bottom: 25px;
+        }
+    }
 }

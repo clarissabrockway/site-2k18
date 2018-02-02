@@ -28,6 +28,16 @@ header {
     .links a:hover {
       fill: #7C9195;
       padding-left: 15px; }
+  @media (max-width: 900px) {
+    .links {
+      position: absolute;
+      top: 10px;
+      left: 5px;
+      flex-direction: row; }
+      .links a {
+        margin-right: 10px; }
+        .links a:hover {
+          padding-left: 0; } }
 
 main {
   width: 80vw;
@@ -36,13 +46,29 @@ main {
   main .about {
     display: flex;
     margin-bottom: 20px; }
+    @media (max-width: 900px) {
+      main .about {
+        flex-direction: column; } }
     main .about .desc {
       margin-left: 20px; }
+      @media (max-width: 900px) {
+        main .about .desc {
+          margin: 20px 0 0; } }
       main .about .desc p {
         margin: 0 0 10px; }
+      main .about .desc .about-site {
+        font-size: .9rem;
+        letter-spacing: .05rem;
+        margin-top: 25px; }
+        @media (max-width: 900px) {
+          main .about .desc .about-site {
+            font-size: .8rem; } }
   main .projects ul {
     font-size: .9rem;
     padding: 0 0 0 15px; }
+    @media (max-width: 900px) {
+      main .projects ul {
+        font-size: .8rem; } }
     main .projects ul li {
       margin-bottom: 15px;
       list-style: outside; }
@@ -58,6 +84,11 @@ nav ul {
   padding: 0;
   text-transform: uppercase;
   width: 80vw; }
+@media (max-width: 900px) {
+  nav ul {
+    font-size: .9rem;
+    justify-content: space-between;
+    margin-bottom: 25px; } }
 
 body {
   background-color: #FEFEFE;
@@ -75,6 +106,9 @@ body {
   opacity: .1;
   background-position-y: -200px;
   z-index: -1; }
+  @media (max-width: 900px) {
+    .bg {
+      display: none; } }
 
 h1, h2 {
   font-weight: normal; }
@@ -97,6 +131,9 @@ p, ul {
   margin: 0 0 30px; }
   p a, ul a {
     letter-spacing: .03rem; }
+  @media (max-width: 900px) {
+    p, ul {
+      font-size: .8rem; } }
 
 a {
   color: #282D2E;
