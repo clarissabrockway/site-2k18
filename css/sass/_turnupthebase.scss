@@ -32,7 +32,7 @@ body {
     margin: 0 0 15px;
  }
 
- p {
+ p, ul {
      font-family: $serif;
      font-size: 1.01rem;
      font-weight: 400;
@@ -49,6 +49,7 @@ body {
      color: $darkgrey;
      font-weight: 700;
      text-decoration: none;
+     transition: color .3s ease-in-out;
 
      &:hover {
          color: $accent;

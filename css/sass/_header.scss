@@ -4,22 +4,33 @@ header {
     h1 {
         font-size: 3rem;
         margin: 35px 0 25px;
-    }
 
-    .heart {
-        font-size: 1.1rem;
-        font-weight: bold;
-        display: inline-block;
-        margin-right: 20px;
-        position: relative;
-        top: -12px;
-        left: -22px;
-        transform: rotate(31deg);
-    }
+        img {
+            max-width: 500px;
+            width: 35vw;
 
-    .coffin {
-        display: inline-block;
-        transform: rotate(117deg);
-        font-size: 3.3rem;
+            @media (max-width: 1024px) {
+                width: 77vw;
+            }
+        }
+    }
+}
+
+.links {
+    position: fixed;
+    top: 50px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    fill: $darkgrey;
+
+    a {
+        transition: all .3s ease-in-out;
+        margin:0 0 10px 0;
+
+        &:hover {
+            fill: $accent;
+            padding-left: 15px;
+        }
     }
 }

@@ -8,24 +8,44 @@ header {
   header h1 {
     font-size: 3rem;
     margin: 35px 0 25px; }
-  header .heart {
-    font-size: 1.1rem;
-    font-weight: bold;
-    display: inline-block;
-    margin-right: 20px;
-    position: relative;
-    top: -12px;
-    left: -22px;
-    transform: rotate(31deg); }
-  header .coffin {
-    display: inline-block;
-    transform: rotate(117deg);
-    font-size: 3.3rem; }
+    header h1 img {
+      max-width: 500px;
+      width: 35vw; }
+      @media (max-width: 1024px) {
+        header h1 img {
+          width: 77vw; } }
+
+.links {
+  position: fixed;
+  top: 50px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  fill: #282D2E; }
+  .links a {
+    transition: all .3s ease-in-out;
+    margin: 0 0 10px 0; }
+    .links a:hover {
+      fill: #7C9195;
+      padding-left: 15px; }
 
 main {
   width: 80vw;
   max-width: 800px;
   margin: 0 auto 50px; }
+  main .about {
+    display: flex;
+    margin-bottom: 20px; }
+    main .about .desc {
+      margin-left: 20px; }
+      main .about .desc p {
+        margin: 0 0 10px; }
+  main .projects ul {
+    font-size: .9rem;
+    padding: 0 0 0 15px; }
+    main .projects ul li {
+      margin-bottom: 15px;
+      list-style: outside; }
 
 nav ul {
   display: flex;
@@ -68,20 +88,21 @@ h2 {
   font-size: 1.6rem;
   margin: 0 0 15px; }
 
-p {
+p, ul {
   font-family: "Averia Serif Libre", georgia, serif;
   font-size: 1.01rem;
   font-weight: 400;
   letter-spacing: .1rem;
   line-height: 1.6rem;
   margin: 0 0 30px; }
-  p a {
+  p a, ul a {
     letter-spacing: .03rem; }
 
 a {
   color: #282D2E;
   font-weight: 700;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: color .3s ease-in-out; }
   a:hover {
     color: #7C9195; }
 

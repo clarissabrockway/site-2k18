@@ -2,4 +2,28 @@ main {
     width: 80vw;
     max-width: 800px;
     margin: 0 auto 50px;
+
+    .about {
+        display: flex;
+        margin-bottom: 20px;
+
+        .desc {
+            margin-left: 20px;
+
+            p {
+                margin: 0 0 10px;
+            }
+        }
+    }
+    .projects {
+        ul {
+            font-size: .9rem;
+            padding: 0 0 0 15px;
+
+            li {
+                margin-bottom: 15px;
+                list-style: outside;
+            }
+        }
+    }
 }
